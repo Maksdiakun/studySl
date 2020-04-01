@@ -42,7 +42,7 @@ $(document).ready(function () {
     $('.check_loc ').click(function () {
         Checkloc();
     });
-
+    new WOW().init();
 });
 if ($(window).width() > 1149.9) {
     $(window).scroll(function () {
