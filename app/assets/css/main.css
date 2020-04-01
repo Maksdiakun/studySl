@@ -286,6 +286,9 @@ body {
   line-height: 140%;
   color: #333333; }
 
+a {
+  cursor: pointer; }
+
 main {
   min-height: calc(100vh - 204px); }
 
@@ -495,8 +498,15 @@ h1 {
   font-weight: bold;
   height: 60px;
   max-width: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   width: 410px;
   background: linear-gradient(111.89deg, #164FCE 26.15%, #3772F4 80.23%); }
+  .blue_btn:hover {
+    box-shadow: -1px 11px 35px 2px rgba(0, 0, 0, 0.58);
+    box-shadow: -1px 11px 27px 4px rgba(0, 0, 0, 0.28);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03); }
   @media (max-width: 1600px) {
     .blue_btn {
       height: 50px; } }
@@ -517,9 +527,16 @@ h1 {
   font-weight: bold;
   height: 60px;
   max-width: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   width: 270px;
   border: 1px solid #FFFFFF;
   font-size: 14px; }
+  .transparent_btn:hover {
+    box-shadow: -1px 11px 35px 2px rgba(0, 0, 0, 0.58);
+    box-shadow: -1px 11px 27px 4px rgba(0, 0, 0, 0.28);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03); }
   @media (max-width: 1600px) {
     .transparent_btn {
       height: 50px; } }
@@ -1155,6 +1172,39 @@ body {
   left: 10px;
   position: absolute;
   width: 180px; }
+
+.check_loc:hover label {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2); }
+
+.check_loc label {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.check_loc input:checked + label {
+  -webkit-transform: none !important;
+          transform: none !important; }
+
+.tel_and_mail a, .selcted_lang, .header_social > a, .menu a, .news_item_img img, .read_more, .person_cont a, .footer_social a {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.tel_and_mail a:hover, .selcted_lang:hover, .news_item_img:hover img, .person_cont a:hover, .read_more:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05); }
+
+.lang {
+  cursor: pointer; }
+
+.header_social > a:hover, .footer_social a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2); }
+
+.menu a:hover {
+  color: #164FCE; }
+
+.person_cont a, .read_more {
+  display: block; }
 
 @media (max-width: 1600px) {
   header, .menu {

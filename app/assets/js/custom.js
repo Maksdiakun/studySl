@@ -42,9 +42,12 @@ $(document).ready(function () {
     $('.check_loc ').click(function () {
         Checkloc();
     });
-    new WOW().init();
 });
+
+
 if ($(window).width() > 1149.9) {
+    new WOW().init();
+
     $(window).scroll(function () {
         if ($(document).scrollTop() >= 100) {
             $('header').addClass('header_white');
